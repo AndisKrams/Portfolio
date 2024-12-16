@@ -8,32 +8,59 @@
 /* global styles */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
-body{
+
+body {
   font-family: "Poppins", sans-serif;
   background-color: #a4c2d1;
 }
+
 h1,
 h2 {
   font-family: "DM serif display", serif;
   color: #184f63;
 }
+
 /*About section*/
-#about{
+#about {
   background-color: white;
 }
+
 /*Portfolio*/
-#portfolio{
+#portfolio {
   background-color: #dbdcde;
 }
+
+#portfolio .card-title {
+  color: #1f7798;
+  font-size: 1.2rem;
+}
+
+#portfolio .btn-outline-secondary:hover {
+  background-color: #1f7798;
+}
+
+#portfolio .card-text {
+  min-height: 270px;
+}
+
 /*Contact section*/
-#contact{
+#contact {
   background-color: white;
 }
-#hero{
+
+#hero {
   background-color: #dbdcde;
   background-image: url(../images/background.webp);
   background-size: cover;
   min-height: 500px;
   background-position: 50% 70%;
   padding: 5% 7%;
+}
+
+/*Media queries*/
+
+@media screen and (min-width: 1200px) {
+  #portfolio .card-text {
+    min-height: auto;
+  }
 }
